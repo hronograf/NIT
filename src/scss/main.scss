@@ -1,3 +1,64 @@
-body{
-	background-color: red;	
+@import "bootstrap";
+
+*{
+    box-sizing: border-box;
+}
+
+#navBar {
+	@extend .navbar, .navbar-expand-sm, .bg-dark, .navbar-dark, .sticky-top;
+}
+
+.flexContainer {
+	@extend .d-flex, .flex-wrap, .align-content-center, .justify-content-center;
+}
+
+.productCard{
+	@extend .card;
+	margin: 10px;
+	width: 400px;
+	height: 500px;
+}
+
+.productImage{
+	@extend .card-img-top;
+	object-fit: contain;
+	width: 100%;
+	max-height: 200px;
+	margin-top: 10px;
+}
+
+.cardTitle{
+	@extend .card-title;
+	font-weight: bold;
+	height: 50px;
+}
+
+.cardText{
+	@extend .card-text;
+	overflow-y: hidden;
+	height: 150px;
+}
+
+.bodyFooter {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #333333
+}
+
+.bodyFooter p {
+    padding: 40px;
+}
+
+.bodyFooter a:link,
+.bodyFooter a:visited {
+    display: inline-block;
+    color: #00FFD1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bodyFooter a:hover {
+    color: #06FF00;
+    text-decoration: underline;
 }

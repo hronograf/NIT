@@ -2,11 +2,61 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>S-Thor</title>
 	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="./css/main.css">
 	<script src="./js/main.js"></script>
+</head>
+<body class="container-fluid">
+	<header>
+	 <h1>S-Thor</h1>
+	<nav id="navBar">
+		<ul class="navbar-nav flexContainer">
+		</ul>
+	</nav>
+	</header>
+
+  <!-- The Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Ваш кошик</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+	 <section id="productGrid" class="flexContainer">
+	 </section>
+
+	<footer class="bodyFooter">
+        <p>Created by <a href="https://t.me/fargonorh">hronograf</a></p>
+    </footer>
+	
 </body>
 </html>
